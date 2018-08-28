@@ -14,10 +14,6 @@ public class TodoService {
     TodoRepository todoRepository;
 
     public List<TodoEntity> getAllTodos(){
-        TodoEntity todo = new TodoEntity();
-        todo.setTitle("first todo");
-        todo.setDesc("hard coding");
-        todoRepository.save(todo);
        return todoRepository.findAll();
     }
 }
